@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CHATGPT</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js" defer></script>
+    <style>
+      /* Left side bar style */
+      .left-bar {
+        width: 200px;
+        background-color: #111;
+        padding-top: 20px;
+      }
+
+      .left-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .left-item {
+        margin-bottom: 10px;
+      }
+
+      .left-link {
+        display: block;
+        color: #818181;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 6px 8px 6px 16px;
+      }
+
+      .left-link:hover {
+        color: #f1f1f1;
+      }
+
+      /* Responsive style */
+      @media screen and (max-width: 768px) {
+        .left-bar {
+          width: 10%;
+          background-color: #111;
+        }
+
+        .left-menu {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+
+        .left-item {
+          margin-bottom: 0;
+        }
+
+        .left-link {
+          font-size: 18px;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Left side bar -->
+    <div class="left-bar">
+      <ul class="left-menu">
+        <li class="left-item"><button><a href="#" class="left-link">New Chat</a></button></li>
+        <li class="left-item"><a href="#" class="left-link">Search History</a></li>
+      </ul>
+    </div>
+    <!-- Chats container -->
+    <div class="chat-container"></div>
+    <!-- Typing container -->
+    <div class="typing-container">
+      <div class="typing-content">
+        <div class="typing-textarea">
+          <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+        <div class="typing-controls">
+          <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+          <span id="delete-btn" class="material-symbols-rounded">delete</span>
+      </div>
+    </div>
+  </body>
+</html>
